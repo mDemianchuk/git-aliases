@@ -1,0 +1,23 @@
+[user]
+	email = 
+	name = 
+[alias]
+	lo = log --oneline
+	st = status
+	ch = checkout
+	cm = commit -m
+	p = push
+	rh = reset --hard
+	a = add
+	aa = add .
+	ca = commit --amend
+	bd = branch -D
+	bda = ! git branch | grep -v $(git rev-parse --abbrev-ref HEAD) | xargs git branch -D
+	pf = push -f
+	pl = pull
+	plr = pull --rebase
+	chm = ! git checkout main || git checkout master
+	cma = !git add -A && git commit -m
+[push]
+	default = current
+	autoSetupRemote = true
